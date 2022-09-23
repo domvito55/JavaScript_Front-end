@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--Student Name: Matheus Teixeira - Student ID: 301236904-->
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="./css/assignment2.css">
+    <link rel="shortcut icon" href="./images/MT.jpg" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img style="width:100%;" alt="Banner" src="./images/CampNightSky.jpg">
+            <hr>
+            <h2>Dynamic Table</h2>
+            <h3>Assignment 2</h3>
+            <hr>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="single" href="../../index.html">Home</a></li>
+                <li><a class="single" href="../../Comp213/index.html">HTML/CSS<p class="sub">(old site)</p></a></li>
+                <li><a class="single" href="../comp125.html">JavaScript<p class="sub">(Comp 125)</p></a></li>
+                <li class="current"><a href="./assignment2.html">COMP 125:<br />Assignment 2</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form>
+                <br />
+                <p><strong>Please insert the number of columns and rows to create a table</strong></p>
+                <br />
+                <fieldset>
+                    <legend>Parameters</legend>
+                    <div class="parameters">
+                        <div>
+                            <label for="rows"># Rows: </label>
+                            <input type="number" name="rows" id="rows" min="0" max="100" step="1" value="15" tabindex="5">
+                        </div>
+                        <div>
+                            <label for="cols"># Columns: </label>
+                            <input type="number" name="cols" id="cols" min="0" max="100" step="1" value="15" tabindex="10">
+                        </div>
+                        <div>
+                            <input class="button" type="button" name="submit" id="submit" value="Create" tabindex="15">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Resulting table</legend>
+                    <table></table>
+                </fieldset>
+                <br />
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <small>
+                &copy;&nbsp;&nbsp;&nbsp;Copyright Matheus Teixeira, 301236904, Client-side Web Development,
+                Summer 2022, June 01, 2022. Assignment 2: Dynamic Table.
+            </small>
+            <hr>
+        </footer>
+    </div>
+    <script src="./javascript/assignment2.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+/* General stuff */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #C0C0C0;
+    background-color: #00000A;
+}
+
+#wrapper {
+    background-color: #00000A;
+}
+
+hr {
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: 2px;
+}
+
+/* header */
+header {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+    color: #A9A9A9;
+}
+
+header img{
+    width:100%;
+}
+
+/* nav */
+nav {
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.sub{
+    font-size: 0.6em;
+    padding: 0;
+    margin: 0em;
+
+    text-indent: 0;
+    height: fit-content;
+    line-height: 0.65em;
+}
+
+nav ul {
+        list-style-image: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #7310E7;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.3em;
+    display: block;
+}
+
+nav a:link {
+    color: #FFF;
+}
+
+nav a:visited {
+    color: #FFF;
+}
+
+nav a:hover {
+    background-color: #FFF;
+    color: #7310E7;
+    margin: 0;
+}
+
+.current a {
+    background-color: #FFF;
+    color: #7310E7;
+    border: 2px solid #7310E7;
+}
+
+.current a:link {
+    background-color: #FFF;
+    color: #7310E7;
+    border: 2px solid #7310E7;
+}
+
+.current a:visited {
+    background-color: #FFF;
+    color: #7310E7;
+    border: 2px solid #7310E7;
+}
+
+.current a:hover {
+    background-color: #FFF;
+    color: #7310E7;
+    border: 2px solid #7310E7;
+}
+
+/* forms */
+form {
+    background-color: #454546;
+    border: none;
+    color: white;
+    padding: 1px;
+    width: 100%;
+}
+
+fieldset {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+}
+
+fieldset div {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+}
+
+input{
+    width:97%;
+}
+
+.button {
+    text-align: center;
+    background-color: #7310E7;
+    color: #FFF;
+    font: 15px Arial;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    position: relative;
+    width: 10em;
+    border-radius: 20px;
+    border-color:#fff;
+}
+
+.button:hover {
+    background-color: #FFF;
+    color: #7310E7;
+}
+
+.buttonDiv{
+    text-align: center;
+}
+
+/*validation*/
+input:invalid{
+    border: #7310E7 5px groove;
+}
+
+input[type=text]:valid, input[type=email]:valid, input[type=password]:valid{
+    border: none;
+}
+
+select:invalid{
+    border: #7310E7 5px groove;
+}
+
+select:valid{
+    border: none;
+}
+
+/* References */
+.reference {
+    text-indent: -4%;
+    padding-left: 4%;
+}
+
+/*################################### Middle screen ###################################*/
+@media (min-width: 650px) {
+    #wrapper {
+        width: 90%;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+    
+    .sub{
+        margin: -0.6em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        width: 25%;
+    }
+
+    .single {
+        line-height: 2.1em;
+        height: 100%;
+        font-size: large;
+    }
+
+    .current {
+        border-bottom: none;
+    }
+
+    .current a {
+        border-left: 2px solid #FFF;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        border-bottom: none
+    }
+
+    .current a:link {
+        border-left: 2px solid #FFF;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        border-bottom: none
+    }
+
+    .current a:visited {
+        border-left: 2px solid #FFF;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        border-bottom: none
+    }
+
+    .current a:hover {
+        border-left: 2px solid #FFF;
+        border-top: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+        border-bottom: none
+    }
+
+    main {
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-top: 1px solid #ffffff;
+        border-bottom: 2px solid #fff;
+    }
+
+    fieldset {
+        margin-left: auto;
+        margin-right: auto;
+        width: 82%;
+    }
+
+    label {
+        margin: 0;
+        padding: 0;
+        clear:both;
+        width: 160px;
+        float: left;
+        text-align: right;
+    }
+
+    input{
+        width:54%;
+        margin: 0;
+        padding: 0;
+      }
+
+}
+
+/*################################### Big screen ###################################*/
+@media (min-width: 1024px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+
+        width: 75%;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2
+    }
+
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .single {
+        line-height: 1.7em;
+        height: 100%;
+        font-size: x-large;
+    }
+
+    nav a {
+        font-size: larger;
+    }
+
+    main {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    fieldset {
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+
+    footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+}

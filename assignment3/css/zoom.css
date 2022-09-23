@@ -1,0 +1,55 @@
+/* General stuff */
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   font-family: sans-serif;
+   color: #C0C0C0;
+   background-color: #00000A;
+}
+
+#wrapper {
+   background-color: #00000A;
+   width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+hr {
+   border-style: solid;
+   border-color: #C0C0C0;
+   border-width: 2px;
+}
+
+/*buttons*/
+.button {
+   text-align: center;
+   background-color: #7310E7;
+   color: #FFF;
+   font: 15px Arial;
+   font-weight: bolder;
+   cursor: pointer;
+   margin: 10px 5px;
+   padding: 5px 10px;
+   position: relative;
+   width: 12em;
+   border-radius: 20px;
+   border-color:#fff;
+}
+
+.button:hover {
+   background-color: #FFF;
+   color: #7310E7;
+}
+
+.buttonDiv{
+   text-align: center;
+}
+
+/* References */
+.reference {
+   text-indent: -4%;
+   padding-left: 4%;
+}

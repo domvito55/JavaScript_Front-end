@@ -1,0 +1,67 @@
+<!--Student Name: Matheus Teixeira
+    Student ID: 301236904
+    Comp 125 - Assignment 6
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo gallery 2</title>
+    <link rel="stylesheet" href="./css/photos.css">
+    <link rel="shortcut icon" href="./images/MT.jpg" />
+    <script src="./libraries/modernizr-custom.js"></script>
+    <script src="./libraries/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   <div  id="wrapper">
+      <header>
+         <img alt="Banner" src="./images/CampNightSky.jpg">
+         <hr>
+         <h2>Ajax & JQuery</h2>
+         <h3>Assignment 6</h3>
+         <hr>
+      </header>
+      <nav>
+         <ul>
+             <li><a class="single" href="../../index.html">Home</a></li>
+             <li><a class="single" href="../../Comp213/index.html">HTML/CSS<p class="sub">(old site)</p></a></li>
+             <li><a class="single" href="../comp125.html">JavaScript<p class="sub">(Comp 125)</p></a></li>
+             <li class="current"><a href="./photos.htm">COMP 125:<br />Assignment 6</a></li>
+         </ul>
+     </nav>
+      <article>
+         <div id="leftarrow">
+            <p>&lt;</p>
+         </div>
+         <figure id="fig2">
+            <img width="360" height="202"/>
+         </figure>
+         <figure id="fig3">
+            <img width="480" height="270"/>
+         </figure>
+         <figure id="fig4">
+            <img width="360" height="202"/>
+         </figure>
+         <div id="rightarrow">
+            <p>&gt;</p>
+         </div>
+         <p id="para"></p>
+         <div class="buttonDiv">
+            <input class="button" type="button" name="update" id="update" value="Update" tabindex="55">
+        </div>
+
+      </article>
+      <footer>
+         <hr>
+         <small>
+             &copy;&nbsp;&nbsp;&nbsp;Copyright Matheus Teixeira, 301236904, Client-side Web Development,
+             Summer 2022, June 26, 2022. Assignment 3: Photography Galery.
+         </small>
+         <hr>
+     </footer>
+   </div>
+   <script src="./javascript/photos.js"></script>
+</body>
+</html>

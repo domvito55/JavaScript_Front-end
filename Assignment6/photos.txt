@@ -1,0 +1,7 @@
+[
+	{"name":"IMG_01.jpg","visibleTime":2000},
+	{"name":"IMG_02.jpg","visibleTime":3000},
+	{"name":"IMG_03.jpg","visibleTime":2000},
+	{"name":"IMG_04.jpg","visibleTime":3000},
+	{"name":"IMG_05.jpg","visibleTime":2000}
+]

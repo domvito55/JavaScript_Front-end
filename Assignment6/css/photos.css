@@ -1,0 +1,428 @@
+/* General stuff */
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   margin: 0 auto;
+   font-family: sans-serif;
+   color: #C0C0C0;
+   background-color: #00000A;
+   position: relative;
+}
+
+#wrapper {
+   background-color: #00000A;
+}
+
+hr {
+   border-style: solid;
+   border-color: #C0C0C0;
+   border-width: 2px;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* page header */
+header {
+   text-align: center;
+   padding: 0;
+   margin: 0;
+   border-bottom: 2px solid #ffffff;
+   color: #A9A9A9;
+}
+
+header img{
+   width:100%;
+}
+
+/* nav */
+nav {
+   z-index: 40;
+   padding: 0;
+   margin: 0;
+}
+
+.sub{
+   font-size: 0.6em;
+   padding: 0;
+   margin: 0em;
+
+   text-indent: 0;
+   height: fit-content;
+   line-height: 0.65em;
+}
+
+nav ul {
+       list-style-image: none;
+   list-style-type: none;
+   padding: 0;
+}
+
+nav li {
+   text-align: center;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   background-color: #7310E7;
+}
+
+nav a {
+   text-decoration: none;
+   font-size: medium;
+   font-weight: bold;
+   padding: 0.3em;
+   display: block;
+}
+
+nav a:link {
+   color: #FFF;
+}
+
+nav a:visited {
+   color: #FFF;
+}
+
+nav a:hover {
+   background-color: #FFF;
+   color: #7310E7;
+   margin: 0;
+}
+
+.current a {
+   background-color: #FFF;
+   color: #7310E7;
+   border: 2px solid #7310E7;
+}
+
+.current a:link {
+   background-color: #FFF;
+   color: #7310E7;
+   border: 2px solid #7310E7;
+}
+
+.current a:visited {
+   background-color: #FFF;
+   color: #7310E7;
+   border: 2px solid #7310E7;
+}
+
+.current a:hover {
+   background-color: #FFF;
+   color: #7310E7;
+   border: 2px solid #7310E7;
+}
+
+/* main content */
+article {
+   position: relative;
+   padding-top: 280px;
+}
+
+#leftarrow, #rightarrow {
+   background-color: #7310E7;
+   color: #FFF;
+   cursor: pointer;
+   margin: 10px 5px;
+   padding: 5px 10px;
+   border-radius: 20px;
+   border-color:#fff;
+
+   position: absolute;
+   z-index: 30;
+   text-align: center;
+   height: 135px;
+   width: 40px;
+   top: 67px;
+}
+
+#leftarrow:hover, #rightarrow:hover{
+   background-color: #FFF;
+   color: #7310E7;
+}
+
+#leftarrow {
+   left: 0;
+}
+
+#rightarrow {
+   right: 0;
+}
+
+#leftarrow p, #rightarrow p {
+   position: relative;
+   top: 50%;
+   margin-top: -0.5em;
+}
+
+figure {
+   position: absolute;
+   margin-top: 5px;
+   -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   -moz-box-shadow:    10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   box-shadow:         10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+}
+
+#fig2 {
+   z-index: 10;
+   left: 13%;
+   top: 34px;
+}
+
+#fig3 {
+   z-index: 20;
+   left: 50%;
+   margin-left: -240px;
+   top: 0;
+}
+
+#fig4 {
+   z-index: 10;
+   right: 13%;
+   top: 34px;
+}
+
+/* Favorites stuff*/
+aside img{
+   cursor: pointer;
+   width: 17.7%;
+   margin-top:5px;
+   margin-bottom:5px;
+   margin-left:1%;
+   margin-right:1%;
+   border-radius: 10px;
+
+}
+
+fieldset {
+   border-radius: 20px;
+
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5px;
+   padding-right: 0;
+
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+fieldset p{
+   color: #FFF;
+   cursor: pointer;
+   
+   height: 1em;
+   margin-right: -1%;
+}
+
+.button {
+   text-align: center;
+   background-color: #7310E7;
+   color: #FFF;
+   font: 15px Arial;
+   font-weight: bolder;
+   cursor: pointer;
+   margin: 10px 5px;
+   padding: 5px 10px;
+   position: relative;
+   width: 10em;
+   border-radius: 20px;
+   border-color:#fff;
+}
+
+.button:hover {
+   background-color: #FFF;
+   color: #7310E7;
+}
+
+.buttonDiv{
+   text-align: center;
+}
+
+/*################################### Middle screen ###################################*/
+@media (min-width: 650px) {
+   #wrapper {
+       width: 90%;
+       margin: auto;
+       max-width: 1200px;
+   }
+
+   nav {
+       position: sticky;
+       top: 0;
+   }
+
+   .sub{
+      margin: -0.6em;
+  }
+
+   nav ul {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: stretch;
+       padding: 0;
+       margin: 0;
+   }
+
+   nav li {
+       width: 25%;
+   }
+
+   .single {
+       line-height: 2.1em;
+       height: 100%;
+       font-size: large;
+   }
+
+   .current {
+       border-bottom: none;
+   }
+
+   .current a {
+       border-left: 2px solid #FFF;
+       border-top: 2px solid #FFF;
+       border-right: 2px solid #FFF;
+       border-bottom: none
+   }
+
+   .current a:link {
+       border-left: 2px solid #FFF;
+       border-top: 2px solid #FFF;
+       border-right: 2px solid #FFF;
+       border-bottom: none
+   }
+
+   .current a:visited {
+       border-left: 2px solid #FFF;
+       border-top: 2px solid #FFF;
+       border-right: 2px solid #FFF;
+       border-bottom: none
+   }
+
+   .current a:hover {
+       border-left: 2px solid #FFF;
+       border-top: 2px solid #FFF;
+       border-right: 2px solid #FFF;
+       border-bottom: none
+   }
+
+}
+
+/*################################### Big screen ###################################*/
+@media (min-width: 1024px) {
+   #wrapper {
+       display: grid;
+       grid-template-columns: auto;
+       grid-template-rows: auto auto auto auto auto;
+
+       width: 75%;
+       margin: auto;
+       max-width: 1200px;
+   }
+
+   header {
+       grid-row: 1 / 2;
+       grid-column: 1 / 2
+   }
+
+   nav {
+       grid-row: 2 / 3;
+       grid-column: 1 / 2;
+   }
+
+   .single {
+       line-height: 1.7em;
+       height: 100%;
+       font-size: x-large;
+   }
+
+   nav a {
+       font-size: larger;
+   }
+
+   article {
+       grid-row: 3 / 4;
+       grid-column: 1 / 2;
+   }
+
+   aside {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+   }
+
+  footer {
+      grid-row: 5 / 6;
+      grid-column: 1 / 2;
+   }
+}

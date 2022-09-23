@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Student Name: Matheus Teixeira - Student ID: 301236904-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fill N Validation</title>
+    <link rel="stylesheet" href="./css/midterm.css">
+    <link rel="shortcut icon" href="./images/MT.jpg" />
+    <script src="./libraries/modernizr-custom.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img alt="Banner" src="./images/CampNightSky.jpg">
+            <hr>
+            <h2>Autofill &amp; Validation</h2>
+            <h3>Midterm</h3>
+            <hr>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="single" href="../../index.html">Home</a></li>
+                <li><a class="single" href="../../Comp213/index.html">HTML/CSS<p class="sub">(old site)</p></a></li>
+                <li><a class="single" href="../comp125.html">JavaScript<p class="sub">(Comp 125)</p></a></li>
+                <li class="current"><a href="./midterm.html">COMP 125:<br />Midterm</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Billing Address</legend>
+                    <div class="billing">
+                        <div>
+                            <label for="firstNameB">First Name: &nbsp;</label>
+                            <input type="text" name="firstNameB" id="firstNameB" autofocus placeholder="First Name" maxlength="16" title="This is a required field.&#10;It can contain up to 16 characteres." required tabindex="5"/>
+                        </div>
+                        <div>
+                            <label for="lastNameB">Last Name: &nbsp;</label>
+                            <input type="text" name="lastNameB" id="lastNameB" placeholder="Last Name" maxlength="31"  title="This is a required field.&#10;It can contain up to 31 characteres." required tabindex="10"/>
+                        </div>
+                        <div>
+                            <label for="streetB">Street Address: &nbsp;</label>
+                            <input type="text" name="streetB" id="streetB" placeholder="### Street name" maxlength="31" pattern="[0-9]{1,}.{0,30}" title="This is a required field.&#10;It must start with a number.&#10;It can contain up to 31 characteres." required tabindex="15"/>
+                        </div>
+                        <div>
+                            <label for="cityB">City: &nbsp;</label>
+                            <input type="text" name="cityB" id="cityB" placeholder="City" maxlength="31" title="This is a required field.&#10;It can contain up to 31 characteres." required tabindex="20"/>
+                        </div>
+                        <div>
+                            <label for="provinceB">Province:  &nbsp;</label>
+                            <select id="provinceB" name="provinceB" size="1" title="This is a required field." required tabindex="25">
+                                <option value="AB">AB</option>
+                                <option value="BC">BC</option>
+                                <option value="MB">MB</option>
+                                <option value="NB">NB</option>
+                                <option value="NL">NL</option>
+                                <option value="NS">NS</option>
+                                <option value="NT">NT</option>
+                                <option value="NU">NU</option>
+                                <option value="ON">ON</option>
+                                <option value="PE">PE</option>
+                                <option value="QC">QC</option>
+                                <option value="SK">SK</option>
+                                <option value="YT">YT</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="zipB">Zip Code: &nbsp;</label>
+                            <input type="text" name="zipB" id="zipB" placeholder="A1A 1A1" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" minlength="7" maxlength="7" title="This is a required field.&#10;It must contain letter number letter space number letter number." required tabindex="30"/>
+                        </div>
+                        <div>
+                            <label for="phoneB">Phone #: &nbsp;</label>
+                            <input type="text" name="phoneB" id="phoneB" placeholder="### ### ####" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="This is a required field.&#10;It must contain 3 numbers space 3 numbers space 4 numbers." minlength="12" maxlength="12" required tabindex="35"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Address</legend>
+                    <div class="delivery">
+                        <div class="chk">
+                            <input type="checkbox" name="copy" id="copy" value="yes" tabindex="37"/>
+                            <label for="copy"><strong>Same as billing address</strong></label>
+                        </div>
+                        <div>
+                            <label for="firstNameD">First Name: &nbsp;</label>
+                            <input type="text" name="firstNameD" id="firstNameD" placeholder="First Name" maxlength="16" title="This is a required field.&#10;It can contain up to 16 characteres." required tabindex="40"/>
+                        </div>
+                        <div>
+                            <label for="lastNameD">Last Name: &nbsp;</label>
+                            <input type="text" name="lastNameD" id="lastNameD" placeholder="Last Name" maxlength="31" title="This is a required field.&#10;It can contain up to 31 characteres." required tabindex="45"/>
+                        </div>
+                        <div>
+                            <label for="streetD">Street Address: &nbsp;</label>
+                            <input type="text" name="streetD" id="streetD" placeholder="### Street name" pattern="[0-9]{1,}.{0,30}" maxlength="31" title="This is a required field.&#10;It must start with a number.&#10;It can contain up to 31 characteres." required tabindex="50"/>
+                        </div>
+                        <div>
+                            <label for="cityD">City: &nbsp;</label>
+                            <input type="text" name="cityD" id="cityD" placeholder="City" maxlength="31" title="This is a required field.&#10;It can contain up to 31 characteres." required tabindex="55"/>
+                        </div>  
+                        <div>
+                            <label for="provinceD">Province:  &nbsp;</label>
+                            <select id="provinceD" name="provinceD" size="1" title="This is a required field." required tabindex="60">
+                                <option value="AB">AB</option>
+                                <option value="BC">BC</option>
+                                <option value="MB">MB</option>
+                                <option value="NB">NB</option>
+                                <option value="NL">NL</option>
+                                <option value="NS">NS</option>
+                                <option value="NT">NT</option>
+                                <option value="NU">NU</option>
+                                <option value="ON">ON</option>
+                                <option value="PE">PE</option>
+                                <option value="QC">QC</option>
+                                <option value="SK">SK</option>
+                                <option value="YT">YT</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="zipD">Zip Code: &nbsp;</label>
+                            <input type="text" name="zipD" id="zipD" placeholder="A1A 1A1" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1} [0-9]{1}[A-Za-z]{1}[0-9]{1}" minlength="7" maxlength="7" title="This is a required field.&#10;It must contain letter number letter space number letter number." required tabindex="65"/>
+                        </div>
+                        <div>
+                            <label for="phoneD">Phone #: &nbsp;</label>
+                            <input type="text" name="phoneD" id="phoneD" placeholder="### ### ####" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" minlength="12" maxlength="12" title="This is a required field.&#10;It must contain 3 numbers space 3 numbers space 4 numbers." required tabindex="70"/>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="buttonDiv">
+                    <input class="button" type="submit" name="submit" id="submit" value="Submit" tabindex="75">
+                </div>
+                <br />
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <small>
+                &copy;&nbsp;&nbsp;&nbsp;Copyright Matheus Teixeira, 301236904, Client-side Web Development,
+                Summer 2022, June 17, 2022. Midterm: Autofill &amp; Validation.
+            </small>
+            <hr>
+        </footer>
+    </div>
+    <script src="./javascript/midterm.js"></script>
+</body>
+</html>

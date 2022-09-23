@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Student Name: Matheus Teixeira - Student ID: 301236904-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Validation</title>
+    <link rel="stylesheet" href="./css/assignment4.css">
+    <link rel="shortcut icon" href="./images/MT.jpg" />
+    <script src="./libraries/modernizr-custom.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img alt="Banner" src="./images/CampNightSky.jpg">
+            <hr>
+            <h2>Form Validation</h2>
+            <h3>Assignment 4</h3>
+            <hr>
+        </header>
+        <nav>
+            <ul>
+                <li><a class="single" href="../../index.html">Home</a></li>
+                <li><a class="single" href="../../Comp213/index.html">HTML/CSS<p class="sub">(old site)</p></a></li>
+                <li><a class="single" href="../comp125.html">JavaScript<p class="sub">(Comp 125)</p></a></li>
+                <li class="current"><a href="./assignment4.html">COMP 125:<br />assignment 4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Member registration</legend>
+                    <div class="membership">
+                        <div>
+                            <label for="firstName">First Name: &nbsp;</label>
+                            <input type="text" name="firstName" id="firstName" autofocus
+                                placeholder = "First Name" maxlength="16"
+                                title="This is a required field.&#10;It can contain up to 16 characteres."
+                                tabindex="5"
+                            />
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name: &nbsp;</label>
+                            <input type="text" name="lastName" id="lastName"
+                                placeholder="Last Name" maxlength="31"
+                                title="This is a required field.&#10;It can contain up to 31 characteres."
+                                tabindex="10"
+                            />
+                        </div>
+                        <div>
+                            <label for="address">Address: &nbsp;</label>
+                            <input type="text" name="address" id="address"
+                                placeholder="### Street name" maxlength="31"
+                                title="This is a required field.&#10;It can contain up to 31 characteres."
+                                tabindex="15"
+                            />
+                        </div>
+                        <div>
+                            <label for="city">City: &nbsp;</label>
+                            <input type="text" name="city" id="city"
+                                placeholder="City" maxlength="31"
+                                title="This is a required field.&#10;It can contain up to 31 characteres."
+                                tabindex="20"
+                            />
+                        </div>
+                        <div>
+                            <label for="zip">Postal Code: &nbsp;</label>
+                            <input type="text" name="zip" id="zip"
+                                placeholder="A1A1A1" minlength="6" maxlength="6"
+                                title="This is a required field.&#10;It must contain exactly 6 characteres in this order:&#10;letter number letter number letter number."
+                                tabindex="25"
+                            />
+                        </div>
+                        <div>
+                            <label for="province">Province: &nbsp;</label>
+                            <input type="text" name="province" id="province"
+                                placeholder="QC or ON or MN or SK or AB or BC" minlength="2" maxlength="2"
+                                title="This is a required field.&#10;It must contain&#10;a) exactly 2 characteres, and&#10;b) be one of the 6 Canadian provinces available:&#10;QC or ON or MN or SK or AB or BC"
+                                tabindex="30"
+                            />
+                        </div>
+                        <div>
+                            <label for="age">Age: &nbsp;</label>
+                            <input type="text" name="age" id="age"
+                                placeholder="18 &lt; number &lt; 124" minlength="2" maxlength="3"
+                                title="This is a required field.&#10;It must a number greater than 18 and less than 124"
+                                tabindex="35"
+                            />
+                        </div>
+                        <div>
+                            <label for="pass">Password: &nbsp;</label>
+                            <input type="password" name="pass" id="pass"
+                                placeholder="A1pass" minlength="6" maxlength="254"
+                                title="This is a required field.&#10;It must contain, at least:&#10;a) 6 characteres&#10;b) a Capital letter&#10;c) a number&#10;No special characteres are allowed"
+                                tabindex="40"
+                            />
+                        </div>
+                        <div>
+                            <label for="confirm">Confirm: &nbsp;</label>
+                            <input type="password" name="confirm" id="confirm"
+                                placeholder="A1pass" minlength="6" maxlength="254"
+                                title="This is a required field.&#10;It must the passwor entered before"
+                                tabindex="45"
+                            />
+                        </div>
+                        <div>
+                            <label for="email">E-mail: &nbsp;</label>
+                            <input type="email" name="email" id="email"
+                                placeholder="username@provider.ca" minlength="6" maxlength="254"
+                                title="This is a required field.&#10;a)It must start with some of valid caracteres (letter, number, -, or _)&#10;b) be followed by @&#10;c) then some valid caracteres&#10;d) be followed by a single dot (.)&#10;d) end with a valid top level domain"
+                                tabindex="50"
+                            />
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="buttonDiv">
+                    <input class="button" type="submit" name="submit" id="submit" value="Register Now" tabindex="55">
+                    <input class="button" type="reset" name="clear" id="clear" value="Clear Form" tabindex="60">
+                </div>
+                <br />
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <small>
+                &copy;&nbsp;&nbsp;&nbsp;Copyright Matheus Teixeira, 301236904, Client-side Web Development,
+                Summer 2022, July 22, 2022. Assignment 4: Form Validation.
+            </small>
+            <hr>
+        </footer>
+    </div>
+    <script src="./javascript/assignment4.js"></script>
+</body>
+</html>
